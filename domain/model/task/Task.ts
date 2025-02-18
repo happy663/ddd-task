@@ -8,6 +8,18 @@ export class Task {
   private dueDate: DueDate;
   private status: TaskStatus;
 
+  constructor(
+    id: string,
+    title: TaskTitle,
+    dueDate: DueDate,
+    status: TaskStatus,
+  ) {
+    this.id = id;
+    this.title = title;
+    this.dueDate = dueDate;
+    this.status = status;
+  }
+
   // taskの完了
   complete(): void {
     this.status = TaskStatus.DONE;
