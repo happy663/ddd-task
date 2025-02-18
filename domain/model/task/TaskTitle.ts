@@ -1,6 +1,6 @@
 // 値オブジェクト(不変)
 
-class TaskTitle {
+export class TaskTitle {
   private readonly value: string;
 
   constructor(value: string) {
