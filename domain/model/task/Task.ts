@@ -43,4 +43,8 @@ export class Task {
   isOverdue(): boolean {
     return this.status === TaskStatus.TODO && this.dueDate.isOverDue();
   }
+
+  getId(): string {
+    return this.id;
+  }
 }
